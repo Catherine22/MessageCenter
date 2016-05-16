@@ -8,11 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.softworld.messagescenter.BroadcastCenter;
-import com.softworld.messagescenter.CustomReceiver;
-import com.softworld.messagescenter.Result;
-
 import tw.com.softworld.api.R;
+import tw.com.softworld.messagescenter.BroadcastCenter;
+import tw.com.softworld.messagescenter.CustomReceiver;
+import tw.com.softworld.messagescenter.Result;
 
 
 /**

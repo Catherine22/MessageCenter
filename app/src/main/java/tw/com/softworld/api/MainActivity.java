@@ -1,23 +1,21 @@
 package tw.com.softworld.api;
 
-import android.content.pm.PackageManager;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.softworld.messagescenter.AsyncResponse;
-import com.softworld.messagescenter.BroadcastCenter;
-import com.softworld.messagescenter.ErrorMessages;
-
 import tw.com.softworld.api.broadcastSample.InboxFragment1;
 import tw.com.softworld.api.broadcastSample.InboxFragment2;
 import tw.com.softworld.api.broadcastSample.InboxFragment3;
+import tw.com.softworld.messagescenter.AsyncResponse;
+import tw.com.softworld.messagescenter.BroadcastCenter;
+import tw.com.softworld.messagescenter.ErrorMessages;
 
 public class MainActivity  extends FragmentActivity implements AsyncResponse {
 
