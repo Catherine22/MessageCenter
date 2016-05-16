@@ -4,7 +4,7 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'API'
 
-    publishedGroupId = 'tw.com.soft-world'
+    publishedGroupId = 'tw.com.soft-world.platformtech.mobile'
     libraryName = 'API'
     artifact = 'messagescenter'  //module name
 

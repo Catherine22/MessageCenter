@@ -11,10 +11,10 @@
   - 導入library，在app的build.gradle中添加：
 ```Java
 dependencies {
-    compile 'tw.com.soft-world:messagescenter:1.0.0'
+    compile 'tw.com.soft-world.platformtech.mobile:messagescenter:1.0.0'
     }
 ```
-  - 在發送端implemnets AsyncResponse
+  - 在發送端implements AsyncResponse
 ```Java
 public class MainActivity extends Activity implements AsyncResponse{
 
@@ -41,24 +41,24 @@ bc.pushString("我是actionName A001", "你好啊");
 ```
   - 在接收端加入：
 ```Java
-        CustomReceiver cr = new CustomReceiver() {
-            @Override
-            public void onBroadcastReceive(Result result) {
-            //根據不同的訊息類型，呼叫getInt(), getBundle()...等等
-                String messages ＝ result.getString();
-                Log.d("myFragment","我收到了：" + messages);
-            }
-        };
-        BroadcastCenter bc = new BroadcastCenter(getActivity(), cr);
-        bc.gotMessages("我是actionName A001");
+CustomReceiver cr = new CustomReceiver() {
+    @Override
+    public void onBroadcastReceive(Result result) {
+    //根據不同的訊息類型，呼叫getInt(), getBundle()...等等
+        String messages ＝ result.getString();
+        Log.d("myFragment","我收到了：" + messages);
+    }
+};
+BroadcastCenter bc = new BroadcastCenter(getActivity(), cr);
+bc.gotMessages("我是actionName A001");
 ```
   - 釋放broadcast，在接收端加入：
 ```Java
-    @Override
-    public void onDestroy() {
-        super.onDestroyView();
-        bc.release();
-    }
+@Override
+public void onDestroy() {
+    super.onDestroyView();
+    bc.release();
+}
 ```
   - 預設會打印logs，可呼叫下列代碼進行修改：
 ```Java
