@@ -8,5 +8,5 @@ import java.util.Map;
  */
 public class Config {
     public static final boolean showDebugLog = true;
-    protected static final Map<String, String> messagesList = new HashMap<>();
+    protected static final Map<String, String> messagesList = new HashMap<String, String>();
 }

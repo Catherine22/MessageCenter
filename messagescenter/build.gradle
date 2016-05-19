@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/PlatformTech/API'
     gitUrl = 'https://github.com/PlatformTech/API.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.1'
 
     developerId = 'PlatformTech'
     developerName = 'PlatformTech'
@@ -25,12 +25,12 @@ ext {
 }
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 17
     buildToolsVersion "23.0.3"
 
     defaultConfig {
         minSdkVersion 7
-        targetSdkVersion 23
+        targetSdkVersion 19
         versionCode 1
         versionName "1.0"
     }
@@ -43,9 +43,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:support-v4:19.1.0'
 }
 
 apply from: 'https://raw.githubusercontent.com/PlatformTech/jcenter/master/install.gradle'
