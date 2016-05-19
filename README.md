@@ -11,7 +11,7 @@
   - 導入library，在app的build.gradle中添加：
 ```Java
 dependencies {
-    compile 'tw.com.soft-world.platformtech.mobile:messagescenter:1.0.0'
+    compile 'tw.com.soft-world.platformtech.mobile:messagescenter:+'
     }
 ```
   - 在發送端implements AsyncResponse
