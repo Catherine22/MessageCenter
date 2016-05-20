@@ -4,7 +4,6 @@ package tw.com.softworld.messagescenter;
  * Created by Catherine on 16/5/10.
  */
 public class ErrorMessages {
-
     /**
      * Action names or messages are null.
      */

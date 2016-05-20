@@ -45,7 +45,13 @@
     <RelativeLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="100dp">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container_down"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
 
     </RelativeLayout>
 

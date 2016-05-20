@@ -1,4 +1,4 @@
-package tw.com.softworld.api.broadcastSample;
+package tw.com.softworld.api;
 
 
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import tw.com.softworld.api.R;
-import tw.com.softworld.messagescenter.BroadcastCenter;
+import tw.com.softworld.messagescenter.Client;
 import tw.com.softworld.messagescenter.CustomReceiver;
 import tw.com.softworld.messagescenter.Result;
 
@@ -17,14 +17,14 @@ import tw.com.softworld.messagescenter.Result;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class InboxFragment3 extends Fragment {
+public class fragment2 extends Fragment {
 
-    private BroadcastCenter bc;
+    private Client client;
     private CustomReceiver cr;
     private TextView tv;
 
 
-    public InboxFragment3() {
+    public fragment2() {
     }
 
 
@@ -33,7 +33,7 @@ public class InboxFragment3 extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_inbox, container, false);
         tv = (TextView) view.findViewById(R.id.tv);
-        tv.setText("Hello blank fragment3");
+        tv.setText("Hello blank fragment2");
 
         cr = new CustomReceiver() {
             @Override
@@ -41,19 +41,19 @@ public class InboxFragment3 extends Fragment {
                 doSomething(result);
             }
         };
-        bc = new BroadcastCenter(getActivity(), cr);
-        bc.gotMessages("A003");
+        client = new Client(getActivity(), cr);
+        client.gotMessages("A002");
         return view;
     }
 
     private void doSomething(Result result) {
-        String text = result.getBundle().getString("bundle3");
+        String text = result.getString();
         tv.setText(text);
     }
 
     @Override
     public void onDestroy() {
         super.onDestroyView();
-        bc.release();
+        client.release();
     }
 }
