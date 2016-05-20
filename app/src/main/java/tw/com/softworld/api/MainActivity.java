@@ -14,11 +14,10 @@ import tw.com.softworld.messagescenter.AsyncResponse;
 import tw.com.softworld.messagescenter.ErrorMessages;
 import tw.com.softworld.messagescenter.Server;
 
-public class MainActivity extends FragmentActivity{
+public class MainActivity extends FragmentActivity {
 
-    private Button bt_f, bt_back, bt_next;
     private EditText et_msg;
-    private Fragment fragment1, fragment2, fragment3, fragment4;
+    private Fragment fragment1, fragment2, fragment3;
     private Server sv;
     private int page = 1;
 
@@ -37,15 +36,15 @@ public class MainActivity extends FragmentActivity{
 
         replace(fragment1);
 
-//init fragment4
-        fragment4 = new fragment4();
+        //init fragment4
+        Fragment fragment4 = new fragment4();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container_down, fragment4);
         transaction.commitAllowingStateLoss();
 
         et_msg = (EditText) findViewById(R.id.et_messages);
 
-        bt_back = (Button) findViewById(R.id.bt_back);
+        Button bt_back = (Button) findViewById(R.id.bt_back);
         bt_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,7 +62,7 @@ public class MainActivity extends FragmentActivity{
                 }
             }
         });
-        bt_next = (Button) findViewById(R.id.bt_next);
+        Button bt_next = (Button) findViewById(R.id.bt_next);
         bt_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,7 +81,7 @@ public class MainActivity extends FragmentActivity{
             }
         });
 
-        bt_f = (Button) findViewById(R.id.bt_send_to_f);
+        Button bt_f = (Button) findViewById(R.id.bt_send_to_f);
         bt_f.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,7 +106,8 @@ public class MainActivity extends FragmentActivity{
 
                 sv = new Server(MainActivity.this, ar);
                 sv.pushBundle("A001", bundle1);
-                sv.pushString("A002", "Hi, bro!");
+                //sv.pushString("A002", "Hi, bro!");
+                //sv.pushInt("A004", 2345);
 
 
             }

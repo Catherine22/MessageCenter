@@ -4,7 +4,10 @@ import android.os.Bundle;
 
 /**
  * Created by Catherine on 16/5/9.
+ * Soft-World Inc.
+ * catherine919@soft-world.com.tw
  */
+@SuppressWarnings("unused")
 public class Result {
 
     private Bundle mBundle;

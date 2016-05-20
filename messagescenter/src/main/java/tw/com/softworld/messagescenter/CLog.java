@@ -4,36 +4,39 @@ import android.util.Log;
 
 /**
  * Created by Catherine on 16/5/9.
+ * Soft-World Inc.
+ * catherine919@soft-world.com.tw
  */
+@SuppressWarnings("unused")
 public class CLog {
 
-    public static void v(String tab, String message) {
+    public static void v(String TAG, String message) {
         if (Config.showDebugLog) {
-            Log.v(tab, message);
+            Log.v(TAG, message);
         }
     }
 
-    public static void d(String tab, String message) {
+    public static void d(String TAG, String message) {
         if (Config.showDebugLog) {
-            Log.d(tab, message);
+            Log.d(TAG, message);
         }
     }
 
-    public static void e(String tab, String message) {
+    public static void e(String TAG, String message) {
         if (Config.showDebugLog) {
-            Log.e(tab, message);
+            Log.e(TAG, message);
         }
     }
 
-    public static void i(String tab, String message) {
+    public static void i(String TAG, String message) {
         if (Config.showDebugLog) {
-            Log.i(tab, message);
+            Log.i(TAG, message);
         }
     }
 
-    public static void w(String tab, String message) {
+    public static void w(String TAG, String message) {
         if (Config.showDebugLog) {
-            Log.w(tab, message);
+            Log.w(TAG, message);
         }
     }
 

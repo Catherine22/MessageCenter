@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import tw.com.softworld.api.R;
 import tw.com.softworld.messagescenter.Client;
 import tw.com.softworld.messagescenter.CustomReceiver;
 import tw.com.softworld.messagescenter.Result;
@@ -18,24 +17,18 @@ import tw.com.softworld.messagescenter.Result;
  * A simple {@link Fragment} subclass.
  */
 public class fragment2 extends Fragment {
-
     private Client client;
-    private CustomReceiver cr;
     private TextView tv;
-
-
-    public fragment2() {
-    }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_inbox, container, false);
         tv = (TextView) view.findViewById(R.id.tv);
-        tv.setText("Hello blank fragment2");
+        String msg = "Hello blank fragment2";
+        tv.setText(msg);
 
-        cr = new CustomReceiver() {
+        CustomReceiver cr = new CustomReceiver() {
             @Override
             public void onBroadcastReceive(Result result) {
                 doSomething(result);

@@ -25,7 +25,7 @@ AsyncResponse ar = new AsyncResponse() {
                 Log.e("MainActivity", "MULTIPLE_VALUE");
                 break;
             case ErrorMessages.NULL_POINTER:
-            //You can't send multiple broadcast messages with same actionName at the same time, You need to rename this action.
+            //You can't send multiple types of broadcast messages with same actionName at the same time, You need to rename this action.
                 Log.e("MainActivity", "NULL_POINTER");
                    break;
            }
@@ -57,14 +57,14 @@ public void onDestroy() {
     client.release();
 }
 ```
-  - If you wouldn't like to show logs, you need following codes
+  - If you would like to show logs, you need following codes
 ```Java
-Config.showDebugLog = false;
+Config.showDebugLog = true;
 ```
   - [Sample][github_MessagesCenter_sample]
 
 ### Version
-1.1.1
+1.3.0
 
 License
 ----
