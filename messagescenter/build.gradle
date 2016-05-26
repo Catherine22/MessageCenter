@@ -4,7 +4,7 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'API'
 
-    publishedGroupId = 'tw.com.soft-world.platformtech.mobile'
+    publishedGroupId = 'soft-world.platformtech.mobile'
     libraryName = 'API'
     artifact = 'messagescenter'  //module name
 
@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/PlatformTech/API'
     gitUrl = 'https://github.com/PlatformTech/API.git'
 
-    libraryVersion = '1.3.0'
+    libraryVersion = '1.0.0'
 
     developerId = 'PlatformTech'
     developerName = 'PlatformTech'

@@ -1,6 +1,6 @@
 # How to use
 ### MessagesCenter
-MessagesCenter bases on android support-v4 LocalBroadcastManager is a library. Server side send messages to client side with actionName.
+MessagesCenter bases on android support-v4 LocalBroadcastManager is a library. Server side sends messages to client side with actionName.
 
 LEARN MORE ABOUT MessagesCenter:
   - activity-to-activity, fragment-to-fragment, activity-to-fragment.
@@ -11,7 +11,7 @@ LEARN MORE ABOUT MessagesCenter:
   - build.gradle in your module：
 ```Java
 dependencies {
-    compile 'tw.com.soft-world.platformtech.mobile:messagescenter:+'
+    compile 'soft-world.platformtech.mobile:messagescenter:+'
     }
 ```
   - Server side (fragments or activities)
@@ -20,11 +20,11 @@ AsyncResponse ar = new AsyncResponse() {
     @Override
     public void onFailure(int errorCode) {
         switch (errorCode) {
-            case ErrorMessages.MULTIPLE_VALUE:
+            case ErrorMessages.NULL_POINTER:
             //Action names or messages are null.
                 Log.e("MainActivity", "MULTIPLE_VALUE");
                 break;
-            case ErrorMessages.NULL_POINTER:
+            case ErrorMessages.MULTIPLE_VALUE:
             //You can't send multiple types of broadcast messages with same actionName at the same time, You need to rename this action.
                 Log.e("MainActivity", "NULL_POINTER");
                    break;
@@ -64,7 +64,7 @@ Config.showDebugLog = true;
   - [Sample][github_MessagesCenter_sample]
 
 ### Version
-1.3.0
+1.0.0
 
 License
 ----
