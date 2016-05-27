@@ -13,7 +13,7 @@ import android.support.v4.content.LocalBroadcastManager;
  */
 @SuppressWarnings("unused")
 public class Client {
-    private static final String TAG = Client.class.getSimpleName();
+    private static final String TAG = "messagescenter";
     private Context ctx;
     private Result result;
     private CustomReceiver cr;
@@ -46,7 +46,7 @@ public class Client {
             @Override
             public void onReceive(Context context, Intent intent) {
                 if (Config.messagesList.get(action) != null) {
-                    CLog.d(TAG, "You got a message");
+                    CLog.d(TAG, "(" + action + ")You got a message");
                     if (Config.messagesList.get(action).equals("MESSAGES_BUNDLE")) {
                         result.setBundle(intent.getBundleExtra("MESSAGES_BUNDLE"));
                         cr.onBroadcastReceive(result);

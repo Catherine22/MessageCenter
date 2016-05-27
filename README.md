@@ -32,7 +32,7 @@ AsyncResponse ar = new AsyncResponse() {
        }
 };
 
-sv = new Server(MainActivity.this, ar);
+Server sv = new Server(MainActivity.this, ar);
 //There are pushInt(), pushBundle()...whatever you need
 sv.pushString("I'm actionName A001", "Hi, bro!");
 ```
@@ -42,11 +42,11 @@ CustomReceiver cr = new CustomReceiver() {
     @Override
     public void onBroadcastReceive(Result result) {
     //Use getInt(), getBundle()...ect, depending on what your server side sends
-        String messages ＝ result.getString();
+        String messages = result.getString();
         Log.d("Fragment","I got:" + messages);
     }
 };
-    Client client = new Client(getActivity(), cr);
+    client = new Client(getActivity(), cr);
     client.gotMessages("I'm actionName A001");
 ```
   - Unregister on client side
@@ -64,7 +64,7 @@ Config.showDebugLog = true;
   - [Sample][github_MessagesCenter_sample]
 
 ### Version
-1.0.0
+1.0.3
 
 License
 ----

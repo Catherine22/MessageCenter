@@ -14,7 +14,7 @@ import static tw.com.softworld.messagescenter.Config.messagesList;
  */
 @SuppressWarnings("unused")
 public class Server {
-    private static final String TAG = Server.class.getSimpleName();
+    private static final String TAG = "messagescenter";
 
     private Context ctx;
     private AsyncResponse ar;

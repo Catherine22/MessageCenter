@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/PlatformTech/API'
     gitUrl = 'https://github.com/PlatformTech/API.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.3'
 
     developerId = 'PlatformTech'
     developerName = 'PlatformTech'

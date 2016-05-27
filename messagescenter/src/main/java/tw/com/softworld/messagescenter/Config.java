@@ -9,6 +9,6 @@ import java.util.Map;
  * catherine919@soft-world.com.tw
  */
 public class Config {
-    public static final boolean showDebugLog = false;
+    public static boolean showDebugLog = false;
     protected static final Map<String, String> messagesList = new HashMap<String, String>();
 }
