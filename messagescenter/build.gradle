@@ -2,22 +2,22 @@ apply plugin: 'com.android.library'
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'API'
+    bintrayName = 'Messagescenter'
 
-    publishedGroupId = 'soft-world.platformtech.mobile'
-    libraryName = 'API'
+    publishedGroupId = 'catherine.mobile'
+    libraryName = 'Messagescenter'
     artifact = 'messagescenter'  //module name
 
     libraryDescription = 'A custom broadcast system on Android'
 
-    siteUrl = 'https://github.com/PlatformTech/API'
-    gitUrl = 'https://github.com/PlatformTech/API.git'
+    siteUrl = 'https://JetAircraft/Messagescenter'
+    gitUrl = 'https://JetAircraft/Messagescenter.git'
 
-    libraryVersion = '1.0.3'
+    libraryVersion = '1.0.0'
 
-    developerId = 'PlatformTech'
-    developerName = 'PlatformTech'
-    developerEmail = 'softworldlee@gmail.com'
+    developerId = 'Catherine'
+    developerName = 'Catherine'
+    developerEmail = 'yacatherine19@gmail.com'
 
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
