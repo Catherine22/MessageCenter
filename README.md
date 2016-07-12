@@ -11,7 +11,7 @@ LEARN MORE ABOUT MessagesCenter:
   - build.gradle in your module：
 ```Java
 dependencies {
-    compile 'soft-world.platformtech.mobile:messagescenter:+'
+    compile 'catherine.mobile:messagescenter:+'
     }
 ```
   - Server side (fragments or activities)
@@ -64,7 +64,7 @@ Config.showDebugLog = true;
   - [Sample][github_MessagesCenter_sample]
 
 ### Version
-1.0.3
+1.0.0
 
 License
 ----
