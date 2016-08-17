@@ -38,6 +38,7 @@ sv.pushString("I'm actionName A001", "Hi, bro!");
 ```
   - Client side (fragments or activities)
 ```Java
+private Client client;
 CustomReceiver cr = new CustomReceiver() {
     @Override
     public void onBroadcastReceive(Result result) {
