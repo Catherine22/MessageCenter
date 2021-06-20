@@ -1,5 +1,5 @@
 # How to use
-### MessagesCenter
+### MessageCenter
 MessagesCenter bases on android support-v4 LocalBroadcastManager is a library. Server side sends messages to client side with actionName.
 
 LEARN MORE ABOUT MessagesCenter:
@@ -61,7 +61,7 @@ public void onDestroy() {
 ```Java
 Config.showDebugLog = true;
 ```
-  - [Sample][github_MessagesCenter_sample]
+  - [Sample][github_MessageCenter_sample]
 
 ### Version
 1.0.0
@@ -75,4 +75,4 @@ License
 
 
    [Apache-2.0]: <https://opensource.org/licenses/Apache-2.0>
-   [github_MessagesCenter_sample]: <https://github.com/PlatformTech/API/tree/master/app/src/main/java/tw/com/softworld/api>
+   [github_MessageCenter_sample]: <https://github.com/PlatformTech/API/tree/master/app/src/main/java/tw/com/softworld/api>
